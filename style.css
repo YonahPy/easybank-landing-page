@@ -46,6 +46,7 @@ nav{
     align-items: center;
     padding: 25px;
     
+    
 }
 .ul-nav{
     display: flex;
@@ -162,6 +163,7 @@ footer{
     justify-content: center;
     align-items: center;
     width: 100vw;
+    gap: 20px;
     
 }
 .icons{
@@ -196,5 +198,96 @@ footer a:hover{
     margin-top: 15px;
     white-space: nowrap;
     font-size: clamp(10px, 13px,20px);
+    
 }
+@media (max-width:769px) {
+    main{
+        padding-inline: 40px;
+    }
+    footer ul{
+        margin-left: 30px;
+    }
+    .aside{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+    .aside img{
+        width: 100%;
+        height: 230px;
+    }
+    .section2{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
 
+}
+@media (max-width:662px){
+    main{
+        padding: 0;
+    }
+        
+    .section1{
+        grid-template-columns: 1fr;
+        
+    }
+    
+    .section1-image{
+        order: 1;
+        background-image: url('./assets/bg-intro-mobile.svg');
+        display: flex;
+        justify-content: center;
+    }
+    .section1-image img{
+        width: 80%;
+        overflow: hidden;
+        
+    }
+    .section1-div1{
+        order: 2;
+        padding: 50px;
+    }
+    .title-section2{
+        padding: 50px;
+    }
+    .section2{
+        grid-template-columns: 1fr;
+        
+    }
+    .section2 div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-inline: 50px;
+    }
+    .aside{
+        grid-template-columns: 1fr;
+        gap: 70px;
+    }
+    aside{
+        padding-inline: 50px;
+    }
+    .aside img{
+        height: 300px;
+        min-height: 200px;
+    }
+    footer{
+        grid-template-columns: 1fr;
+        justify-items: center;
+        
+    }
+    footer ul{
+        grid-template-columns: 1fr;
+        margin-block: 15px;
+    }
+    footer ul li{
+        margin-bottom: 10px;
+    }
+    .logo-footer{
+        margin-bottom: 25px;
+    }
+    .button-footer{
+        align-items: center;
+    }
+
+}
