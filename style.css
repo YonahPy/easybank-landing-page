@@ -48,6 +48,18 @@ nav{
     
     
 }
+.mobile-menu{
+
+    display: none;
+    cursor: pointer;
+}
+.mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: #fff;
+    margin: 8px;
+    transition: 0.3s;
+  }
 .ul-nav{
     display: flex;
 }
@@ -222,6 +234,9 @@ footer a:hover{
 
 }
 @media (max-width:662px){
+    body{
+        overflow: hidden;
+    }
     main{
         padding: 0;
     }
@@ -289,5 +304,15 @@ footer a:hover{
     .button-footer{
         align-items: center;
     }
+    nav .request{
+        display: none;
+
+    }
+    nav .ul-nav{
+        display: none;
+    }
+    
+    
+    
 
 }
